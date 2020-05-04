@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30028.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParsing", "CsvParsing\CsvParsing.csproj", "{CD3BDF92-6611-4769-B084-25A916CD1186}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD3BDF92-6611-4769-B084-25A916CD1186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3BDF92-6611-4769-B084-25A916CD1186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3BDF92-6611-4769-B084-25A916CD1186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3BDF92-6611-4769-B084-25A916CD1186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F839072-0498-4AE3-896D-C71481F4956A}
+	EndGlobalSection
+EndGlobal
