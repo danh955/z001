@@ -5,7 +5,6 @@
 namespace CsvParsing
 {
     using System;
-    using System.Linq;
     using System.Net;
 
     /// <summary>
@@ -24,38 +23,35 @@ namespace CsvParsing
             bool firstLine = true;
             foreach (string[] columns in text.GetCSVs('|'))
             {
-                if (columns.Count() > 0)
+                if (firstLine)
                 {
-                    if (firstLine)
+                    // Header line.
+                    Console.WriteLine(string.Join(", ", columns));
+                    Console.WriteLine();
+                    firstLine = false;
+                }
+                else
+                {
+                    const string CompareText = "File Creation Time:";
+
+                    if (columns[0].StartsWith(CompareText))
                     {
-                        // Header line.
-                        Console.WriteLine(string.Join(", ", columns));
-                        Console.WriteLine();
-                        firstLine = false;
+                        string dateText = columns[0].Substring(CompareText.Length).Trim();
+
+                        // MMDDYYYHHMM
+                        int month = int.Parse(dateText.Substring(0, 2));
+                        int day = int.Parse(dateText.Substring(2, 2));
+                        int year = int.Parse(dateText.Substring(4, 4));
+                        int hour = int.Parse(dateText.Substring(8, 2));
+                        //// It may have a colon between the hour and minute.
+                        int minute = int.Parse(dateText.Substring(dateText[10] == ':' ? 11 : 10, 2));
+                        DateTime fileCreationTime = new DateTime(year, month, day, hour, minute, 0);
+                        Console.WriteLine(fileCreationTime);
                     }
                     else
                     {
-                        const string CompareText = "File Creation Time:";
-
-                        if (columns[0].StartsWith(CompareText))
-                        {
-                            string dateText = columns[0].Substring(CompareText.Length).Trim();
-
-                            // MMDDYYYHHMM
-                            int month = int.Parse(dateText.Substring(0, 2));
-                            int day = int.Parse(dateText.Substring(2, 2));
-                            int year = int.Parse(dateText.Substring(4, 4));
-                            int hour = int.Parse(dateText.Substring(8, 2));
-                            //// It may have a colon between the hour and minute.
-                            int minute = int.Parse(dateText.Substring(dateText[10] == ':' ? 11 : 10, 2));
-                            DateTime fileCreationTime = new DateTime(year, month, day, hour, minute, 0);
-                            Console.WriteLine(fileCreationTime);
-                        }
-                        else
-                        {
-                            // process the line
-                            Console.WriteLine(string.Join(", ", columns));
-                        }
+                        // process the line
+                        Console.WriteLine(string.Join(", ", columns));
                     }
                 }
             }
