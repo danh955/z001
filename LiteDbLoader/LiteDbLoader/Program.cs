@@ -1,12 +1,23 @@
-﻿using System;
+﻿// <copyright file="Program.cs" company="Hilres">
+// Copyright (c) Hilres. All rights reserved.
+// </copyright>
 
 namespace LiteDbLoader
 {
-    class Program
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// Main program class.
+    /// </summary>
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Start of main program.
+        /// </summary>
+        /// <returns>Task.</returns>
+        private static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            await NasdaqData.NasdaqService.GetSymbolListAsync().ConfigureAwait(false);
         }
     }
 }
