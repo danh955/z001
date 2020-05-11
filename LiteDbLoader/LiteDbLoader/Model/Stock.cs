@@ -2,15 +2,15 @@
 // Copyright (c) Hilres. All rights reserved.
 // </copyright>
 
-namespace LiteDbLoader
+namespace LiteDbLoader.Model
 {
     /// <summary>
     /// Stock class.
     /// </summary>
-    public class Stock
+    public class Stock : IEntity
     {
         /// <summary>
-        /// Gets or sets ID.
+        /// Gets or sets iD.
         /// </summary>
         public int Id { get; set; }
 

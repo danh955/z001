@@ -5,6 +5,8 @@
 namespace LiteDbLoader
 {
     using System.Threading.Tasks;
+    using LiteDbLoader.DbUpdater;
+    using LiteDbLoader.Model;
 
     /// <summary>
     /// Main program class.
@@ -17,7 +19,10 @@ namespace LiteDbLoader
         /// <returns>Task.</returns>
         private static async Task Main()
         {
-            await NasdaqData.NasdaqService.GetSymbolListAsync().ConfigureAwait(false);
+            using LiteDbRepository db = new LiteDbRepository(@"c:\code\Data.LiteDB");
+
+            var updater = new NasdaqDbUpdater(db.Stocks);
+            await updater.Update().ConfigureAwait(false);
         }
     }
 }
