@@ -8,6 +8,9 @@ namespace LiteDbLoader.Model
     using System.Threading.Tasks;
     using LiteDB;
 
+    // Note on LiteDB: The next version 5.5 will have a-sync/await implemented.
+    // https://github.com/mbdavid/LiteDB/issues/1300
+
     /// <summary>
     /// Stock repository class.
     /// </summary>
