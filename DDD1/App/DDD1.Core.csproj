@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>DDD1.App.Domain</AssemblyName>
-    <RootNamespace>DDD1.App.Domain</RootNamespace>
+    <AssemblyName>DDD1.Core</AssemblyName>
+    <RootNamespace>DDD1.Core</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\DDD1.App.Domain.xml</DocumentationFile>
+    <DocumentationFile>bin\DDD1.App.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="stylecop.json" />
+    <AdditionalFiles Include="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>

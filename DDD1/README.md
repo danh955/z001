@@ -13,12 +13,9 @@
 ## Directory structure
 
 - UI = Presentation
-- App = Application
-- App.Interface
-- App.Domain = Domain
-- Data = Persistence
-- Service = Infrastructure
-- Common = Cross-Cutting Concerns
+- Core = Application
+- Core.Domain = Domain
+- Data = Persistence and Infrastructure
 - Test
 
 ## Domain-driven design images
@@ -44,3 +41,8 @@ See: [Ports & Adapters Architecture](https://herbertograca.com/2017/09/14/ports-
 ## Other Stuff
 
 https://github.com/microsoft/InventorySample
+
+## Domain structure
+
+- [Reflecting architecture and domain in code](https://herbertograca.com/2019/06/05/reflecting-architecture-and-domain-in-code) by Herberto
+- [Implement a microservice domain model with .NET Core](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/net-core-microservice-domain-model) by Microsoft
