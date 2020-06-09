@@ -46,3 +46,9 @@ https://github.com/microsoft/InventorySample
 
 - [Reflecting architecture and domain in code](https://herbertograca.com/2019/06/05/reflecting-architecture-and-domain-in-code) by Herberto
 - [Implement a microservice domain model with .NET Core](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/net-core-microservice-domain-model) by Microsoft
+- [Design the infrastructure persistence layer](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design) by Microsoft
+
+## Local data storage
+
+- ApplicationData.Current.LocalFolder
+- ApplicationData.Current.LocalCacheFolder

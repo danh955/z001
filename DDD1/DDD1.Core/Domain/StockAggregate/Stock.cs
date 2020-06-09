@@ -7,7 +7,7 @@ namespace DDD1.Core.Domain.StockAggregate
     /// <summary>
     /// Stock class.
     /// </summary>
-    public class Stock : IEntity
+    public class Stock : IAggregateRoot<int>
     {
         /// <summary>
         /// Gets or sets iD.

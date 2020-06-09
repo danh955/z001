@@ -2,14 +2,15 @@
 // Copyright (c) Hilres. All rights reserved.
 // </copyright>
 
-namespace DDD1.Core.Domain.StockAggregate
+namespace DDD1.Core.Storage
 {
     using System.Threading.Tasks;
+    using DDD1.Core.Domain.StockAggregate;
 
     /// <summary>
     /// Stock repository interface.
     /// </summary>
-    public interface IStockRepository : IRepository<Stock>
+    public interface IStockRepository : IRepository<Stock, int>
     {
         /// <summary>
         /// Find by name.
