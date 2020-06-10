@@ -89,7 +89,7 @@ namespace DDD1.Storage.LiteDbRepository
         /// Update.
         /// </summary>
         /// <param name="entity">Stock to update.</param>
-        /// <returns>True if updated.</returns>
+        /// <returns>True if updated else False if not found.</returns>
         public async Task<bool> UpdateAsync(Stock entity)
         {
             return await Task<bool>.FromResult(this.stocks.Update(entity)).ConfigureAwait(false);
