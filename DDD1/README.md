@@ -6,8 +6,8 @@
     - .NET Desktop Development
     - Universal Windows Platform development
     - Windows 10 SDK (10.0.19041)
-- [.NET SDK 5.0.100-preview.4](https://dotnet.microsoft.com/download/dotnet/5.0)
-- [WinUI 3 Project Templates (Preview)](https://aka.ms/winui3/previewdownload)
+- [.NET SDK 5.0.100-preview.5](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [WinUI 3 Project Templates (Preview)](https://aka.ms/winui3/previewdownload)  Not yet, designer does not work.
     - [Windows UI Library 3.0 Preview 1 (May 2020)](https://docs.microsoft.com/en-us/windows/apps/winui/winui3)
 
 ## Directory structure

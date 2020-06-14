@@ -8,13 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		DDD1.sln.vsspell = DDD1.sln.vsspell
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD1.UI.WinUI", "DDD1.UI.WinUI\DDD1.UI.WinUI.csproj", "{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD1.Core", "DDD1.Core\DDD1.Core.csproj", "{0E4A2921-C99D-4815-93EC-3BD9026B0F04}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD1.Storage.LiteDbRepository", "DDD1.Storage.LiteDbRepository\DDD1.Storage.LiteDbRepository.csproj", "{4A510004-F9C4-40A5-AE8F-1082BE08F84C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD1.Test.Core.Storage.LiteDb", "DDD1.Test.Core.Storage.LiteDb\DDD1.Test.Core.Storage.LiteDb.csproj", "{37BF91AE-F546-414C-89A7-D73035CBA750}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD1.Test.Core.Storage.LiteDb", "DDD1.Test.Core.Storage.LiteDb\DDD1.Test.Core.Storage.LiteDb.csproj", "{37BF91AE-F546-414C-89A7-D73035CBA750}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,20 +24,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x64.ActiveCfg = Debug|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x64.Build.0 = Debug|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x64.Deploy.0 = Debug|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x86.ActiveCfg = Debug|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x86.Build.0 = Debug|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Debug|x86.Deploy.0 = Debug|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|Any CPU.ActiveCfg = Release|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x64.ActiveCfg = Release|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x64.Build.0 = Release|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x64.Deploy.0 = Release|x64
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x86.ActiveCfg = Release|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x86.Build.0 = Release|x86
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6}.Release|x86.Deploy.0 = Release|x86
 		{0E4A2921-C99D-4815-93EC-3BD9026B0F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E4A2921-C99D-4815-93EC-3BD9026B0F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E4A2921-C99D-4815-93EC-3BD9026B0F04}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -81,7 +65,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A6EFC670-DE04-423F-BC49-6E7FABFBCEE6} = {C6F59962-F04E-4FE6-95E8-B8E8E3CCC523}
 		{0E4A2921-C99D-4815-93EC-3BD9026B0F04} = {C6F59962-F04E-4FE6-95E8-B8E8E3CCC523}
 		{4A510004-F9C4-40A5-AE8F-1082BE08F84C} = {C6F59962-F04E-4FE6-95E8-B8E8E3CCC523}
 		{37BF91AE-F546-414C-89A7-D73035CBA750} = {C6F59962-F04E-4FE6-95E8-B8E8E3CCC523}
