@@ -4,7 +4,6 @@
 
 namespace DDD1.Core.Storage
 {
-    using System;
     using System.Threading.Tasks;
     using DDD1.Core.Domain;
 
